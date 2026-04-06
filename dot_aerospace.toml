@@ -220,26 +220,13 @@ on-mode-changed = []
 
 # Extra config
 [[on-window-detected]]
-    check-further-callbacks = true
-    run = 'layout floating'
-
-[[on-window-detected]]
     if.app-id = 'com.jetbrains.pycharm'
-    check-further-callbacks = true
     run = 'move-node-to-workspace Q'
 
 [[on-window-detected]]
-    if.app-id = 'com.jetbrains.pycharm'
-    if.window-title-regex-substring = '–' # en dash, only tile the main window
-    run = 'layout tiling'
-
-[[on-window-detected]]
     if.app-id = 'com.jetbrains.WebStorm'
-    check-further-callbacks = true
     run = 'move-node-to-workspace W'
 
 [[on-window-detected]]
-    if.app-id = 'com.jetbrains.WebStorm'
-    if.window-title-regex-substring = '–' # en dash, only tile the main window
-    run = 'layout tiling'
+    run = 'layout floating'
 
