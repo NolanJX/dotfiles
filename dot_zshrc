@@ -1,4 +1,4 @@
-if [[ $TERM_PROGRAM == 'ghostty' || $TERMINAL_EMULATOR == 'JetBrains-JediTerm' ]]; then
+if [[ $TERM_PROGRAM == 'ghostty' || $TERMINAL_EMULATOR == 'JetBrains-JediTerm' || $TERM_PROGRAM == 'vscode' ]]; then
   if [[ $(ps -p $PPID -o comm= 2>/dev/null) != 'fish' ]]; then
     exec fish
   fi
