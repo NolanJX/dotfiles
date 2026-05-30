@@ -228,5 +228,9 @@ on-mode-changed = []
     run = ['move-node-to-workspace W', 'layout accordion vertical']
 
 [[on-window-detected]]
+    if.app-id = 'com.microsoft.VSCode'
+    run = 'move-node-to-workspace E'
+
+[[on-window-detected]]
     run = 'layout floating'
 
