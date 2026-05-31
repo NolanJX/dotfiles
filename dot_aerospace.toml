@@ -232,5 +232,9 @@ on-mode-changed = []
     run = 'move-node-to-workspace E'
 
 [[on-window-detected]]
+    if.app-name-regex-substring = 'Cursor'
+    run = ['move-node-to-workspace R', 'layout accordion vertical']
+
+[[on-window-detected]]
     run = 'layout floating'
 
