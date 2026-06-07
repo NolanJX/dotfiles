@@ -236,5 +236,9 @@ on-mode-changed = []
     run = ['move-node-to-workspace R', 'layout accordion vertical']
 
 [[on-window-detected]]
+    if.app-id = 'org.kde.okular'
+    run = ['move-node-to-workspace U', 'layout accordion vertical']
+
+[[on-window-detected]]
     run = 'layout floating'
 
