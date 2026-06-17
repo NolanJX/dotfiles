@@ -1,5 +1,6 @@
 [alias]
 	st = status
+	ps = -p status
 	co = checkout
 	last = cat-file commit HEAD
 
