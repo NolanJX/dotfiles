@@ -3,4 +3,5 @@
 	ps = -p status
 	co = checkout
 	last = cat-file commit HEAD
+	qc = "!f() { git clone --branch \"$2\" --single-branch --depth 1 \"$1\" ${3:+\"$3\"}; }; f"
 
