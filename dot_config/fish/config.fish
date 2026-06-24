@@ -10,6 +10,6 @@ if status is-interactive
   abbr --add gco git checkout
 
   # Lazygit
-  abbr --add lg lazygit
+  # abbr --add lg lazygit
 end
 
