@@ -8,5 +8,8 @@ if status is-interactive
   abbr --add g git
   abbr --add gst git status
   abbr --add gco git checkout
+
+  # Lazygit
+  abbr --add lg lazygit
 end
 
